@@ -1,0 +1,46 @@
+{
+  "name": "deposit-withdrawal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "open index.html",
+    "build": "webpack",
+    "build-watch": "npm run build -- -w",
+    "build-dev": "cross-env NODE_ENV=development npm run build-watch",
+    "start-dev": "cross-env NODE_ENV=development npm run start",
+    "test": "mocha tests.js --watch --compilers js:babel-register"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-register": "^6.24.1",
+    "chai": "^3.5.0",
+    "chai-enzyme": "^0.6.1",
+    "enzyme": "^2.8.2",
+    "faker": "^4.1.0",
+    "lodash": "^4.17.4",
+    "path": "^0.12.7",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "react-router": "^3.0.0",
+    "react-router-dom": "^4.1.0",
+    "redux": "^3.6.0",
+    "redux-devtools-extension": "^2.13.0",
+    "redux-logger": "^3.0.1",
+    "redux-thunk": "^2.2.0",
+    "semantic-ui": "^2.2.10",
+    "sinon": "^2.1.0",
+    "sinon-chai": "^2.9.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "cross-env": "^4.0.0",
+    "webpack": "^2.3.3"
+  }
+}
